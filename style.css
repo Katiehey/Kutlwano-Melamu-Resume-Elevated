@@ -1,0 +1,109 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: 
+    "sidebar content";
+  min-height: 100vh;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: #201e1eef;
+  color: white;
+  padding-top: 280px;
+  padding-right: 10px;
+  text-align: center;
+  position: relative;
+}
+.content {
+  grid-area: content;
+  background-color: white;
+  color: black;
+  position: relative; /* 👈 important! keeps child elements inside */
+}
+
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.avatar {
+  position: absolute;
+  top: 50px;
+  left: 25%; /* moves image to right edge of sidebar */
+  transform: translate(-50%, 0); /* half inside sidebar, half inside content */
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 4px solid white;
+  z-index: 10;
+}
+
+
+.contact,.education,.languages {
+    margin-left: 65px;
+}
+
+ul {
+    text-align: left;
+}
+
+.name p,
+.surname p,
+.career p {
+  margin: 0;
+  padding: 0;
+}
+
+.name {
+    position: relative;
+    left: 37%;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin-top: 70px;
+}
+
+.surname {
+    position: relative;
+    left: 37%;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: rgba(0, 0, 0, 0.794);
+}
+
+.career {
+    position: relative;
+    left: 37%;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: rgb(37, 36, 36);
+}
+
+
+
+.about-me {
+    margin: 50px;
+    line-height: 1.6;
+    margin-top: 95px;
+}
+
+.experience {
+    margin: 50px;
+    margin-top: 0px;
+    line-height: 1.6;
+}
+
+.skills {
+    margin: 50px;
+    margin-top: 0px;
+    line-height: 1.6;
+}
+
+.key-projects {
+    margin: 50px;
+    margin-top: 0px;
+    line-height: 1.6;
+}
+
+
+
